@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        font-family: 'Courier New', Courier, monospace;
+
+      }
+      .card h4 h3 h5 
+      {
+        color: goldenrod !important;
+        text-decoration-color: goldenrod;
+      }
+
+      .card
+      {
+        margin-left: 50px !important;
+        height: 500px !important;
+        width: 250px;
+        margin-top: 25px;
+        margin-bottom: 2px;
+        background-color: rgb(104, 102, 102)!important;
+        
+      }
+      .section3 
+      {
+        height: 500px;
+      }
+      .card :hover
+      {
+        background-color: rgb(150, 118, 39) !important;
+      }
+      .drop-nav{
+        position: relative;
+      }
+      body{ 
+        background-image: url(bg.jpg);
+      }
+
+      ul li ul.Dropdown{
+            width: 200%;
+            background:black;
+            display: none;
+            position: absolute;
+            z-index: 999;
+            left: 0;
+
+        }
+        ul li:hover ul.Dropdown{
+            display: block; /*display  the dropdown */
+        }
+        ul li ul.Dropdown li{
+            display: block;
+        }
+        h1,h2,h3,h5,h4
+          {
+            text-align: center;
+            color: goldenrod !important ;
+          }
+
+      
+
+    </style>
+   
+    <style>
+   
+      .icons
+      {
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body >
+
+    <!-------this is the code of navigation start now -->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark  " >
+        <div class="container-fluid">
+          
+          <a class="navbar-brand" href="e project.html"><img  src="logo copy.png" style="height: 50px;
+            width: 50px;"></a>
+             
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="e project.html">Home</a>
+              </li>
+              <li class="nav-item drop-nav">
+                <a class="nav-link" href="#products">Product</a>
+                <ul  class="Dropdown">
+                 <li> <a class="nav-link" href="#Recepie">Recepie Mix</a></li>
+                 <li> <a class="nav-link" href="#organic">Organic</a></li>
+                 <li> <a class="nav-link" href="#desert">Desert</a></li>
+                
+                 </ul> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#location">Our Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+
+             
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+      <!-------this is the code of navigation ended---->
+
+<!-------slider code started-->
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="delicious-serbian-food-table-flat-lay.jpg" alt="Recepie Mix" class="d-block" style="width:100%; height: 650px;">
+      </div>
+      <div class="carousel-item">
+        <img src="top-view-table-full-delicious-food-composition.jpg" alt="organic" class="d-block" style="width:100%; height: 650px;">
+      </div>
+      <div class="carousel-item">
+        <img src="rice-with-vegetables-shrimp-sauce-cooked-saj.jpg" alt="saues" class="d-block" style="width:100%; height: 650px;">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+<!-------slider code ended----->
+<hr>
+
+
+<!----------product-->
+<h1 id="products">Product</h1>
+  <hr>
+  <hr>
+  <hr>  
+  <h2   id="Recepie" class="recipe">Recepie Mix</h2>
+  
+<div class="row">
+<div class="col">
+    <div id="1" class="card">
+      <img class="card-img-top" src="biryani.jpg" >
+      <div class="card-body">
+        <h5 class="card-title">Biryani Masala</h5>
+        
+        <p class="card-text"> blend of spices perfect for enhancing the flavor of biryani, offering a rich and aromatic taste to the dish.
+        </p>
+      </div>
+    </div>
+    
+    <div id="2" class="card">
+      <img class="card-img-top" src="tikka boti.jpg" >
+      <div class="card-body">
+        <h5 class="card-title">Tikka Masala</h5>
+        
+        <p class="card-text">  Ideal for marinating and grilling, this masala brings out the vibrant and spicy flavors in tikka dishes.
+
+        </p>
+      </div>
+    </div>
+  
+    <div  id="3" class="card">
+      <img class="card-img-top" src="nihar.jpg" >
+      <div class="card-body">
+        <h5 class="card-title">Nihari Masala </h5>
+        
+        <p class="card-text">Specifically crafted for slow-cooked Nihari, this masala imparts a robust and flavorful profile to the traditional dish.
+
+        </p>
+
+      </div>
+    </div>
+   </div>
+   <div class="col">
+    <div  id="4" class="card">
+      <img class="card-img-top" src="KORMA.jpg" >
+      <div class="card-body">
+        <h5 class="card-title">Qorma Masala</h5>
+        
+        <p class="card-text"> Elevate your Qorma with this spice mix, known for creating a rich and indulgent curry experience.
+
+        </p>
+      </div>
+    </div>
+
+    <div id="5" class="card">
+      <img class="card-img-top" src="tandoori.jpg" >
+      <div class="card-body">
+        <h5 class="card-title">tandori Boti Masala </h5>
+        
+        <p class="card-text">Tailored for tandori Boti, this masala ensures a perfect balance of spice for the marinated and grilled meat.
+
+        </p>
+      </div>
+    </div>
+
+    <div id="6" class="card">
+      <img class="card-img-top" src="kofta.jpg" >
+      <div class="card-body">
+        <h5 class="card-title">Kofta Masala</h5>
+        
+        <p class="card-text">  Enhance the taste of kofta dishes with this spice blend, adding depth and warmth to the savory meatballs.
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div  id="7" class="card">
+      <img class="card-img-top" src="chapli kaba.jpg" >
+      <div class="card-body">
+        <h5 class="card-title">Chappli kabab</h5>
+        
+        <p class="card-text">   Crafted for Chappli kabab cooking, this masala adds a zesty and aromatic touch to your stir-fried or curry-based dishes.
+
+        </p>
+
+      </div>
+    </div>
+ 
+    <div  id="8" class="card">
+      <img class="card-img-top" src="pulaoo.jpg" >
+      <div class="card-body">
+        <h5 class="card-title"> Paloo masala</h5>
+        
+        <p class="card-text"> Perfect for slow-cooked Paloo  masala enriches the broth with a harmonious blend of spices.
+
+        </p>
+      </div>
+    </div>
+
+    <div id="9" class="card">
+      <img class="card-img-top" src="SINDHI BIRYANI.jpg" >
+      <div class="card-body">
+        <h5 class="card-title">Sindhi Biryani Masala</h5>
+        
+        <p class="card-text"> Specifically designed for Sindhi biryani, this masala imparts an authentic and flavorful twist to the classic dish.
+
+        </p>
+      </div>
+    </div>
+</div>
+<div class="col">
+    <div id="10" class="card">
+      <img class="card-img-top" src="haleem.jpg" >
+      <div class="card-body">
+        <h5 class="card-title">Haleem Masala</h5>
+        
+        <p class="card-text"> Tailored for haleem, this masala blend ensures a hearty and aromatic taste to the slow-cooked, thick stew.
+
+        </p>
+      </div>
+    </div>
+
+    <div  id="11" class="card">
+      <img class="card-img-top" src="achar gosht.jpg" >
+      <div class="card-body">
+        <h5 class="card-title">Achar Gosht Masala:</h5>
+        
+        <p class="card-text">  Add a tangy and spicy kick to your Achar Gosht with this masala, elevating the traditional pickle-flavored curry.
+
+
+        </p>
+
+      </div>
+    </div>
+
+    
+    <div  id="12" class="card">
+      <img class="card-img-top" src="gola kabab.jpg" >
+      <div class="card-body">
+        <h5 class="card-title">Gola kabab Masala</h5>
+        
+        <p class="card-text"> Enhance the flavors of grilled or roasted Gola kabab with this masala, offering a perfect balance of spices for a delightful seafood dish.
+
+        </p>
+      </div>
+    </div>
+</div>
+</div>
+<!----organic-->
+<hr>
+<hr>
+<hr>
+<h2 id="organic">Organic</h2>
+
+<div class="row">
+    
+<div class="col">
+
+    <div id="21" class="card">
+      <img class="card-img-top" src="elaichi.jpg" >
+      <div class="card-body">
+        <h5 class="card-title"> Elaichi
+        </h5>
+        
+        <p class="card-text"> 
+          Essence of aromatic cardamom, adding a fragrant touch to dishes.
+        </p>
+      </div>
+    </div>
+
+    
+    <div id="22" class="card">
+      <img class="card-img-top" src="kali mirch.jpg" >
+      <div class="card-body">
+        <h4 class="card-title">Black peper</h4>
+        
+        <p class="card-text">A peppery blend that elevates the taste with a bold, spicy kick.
+
+        </p>
+      </div>
+    </div>
+  
+ 
+    
+    <div  id="23" class="card">
+      <img class="card-img-top" src="RED CHILLI.jpg" >
+      <div class="card-body">
+        <h4 class="card-title">Laal Mirch</h4>
+        
+        <p class="card-text"> Vibrant red chili powder, infusing heat and color to your culinary creations.
+
+        </p>
+
+      </div>
+    </div>
+
+    
+    <div  id="24" class="card">
+      <img class="card-img-top" src="haldi.jpg" >
+      <div class="card-body">
+        <h4 class="card-title">Haldi Masala</h4>
+        
+        <p class="card-text"> A golden spice blend, enriching dishes with the warmth of turmeric.
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <div class="col">
+    <div id="25" class="card">
+      <img class="card-img-top" src="coriander seeds powder.jpg">
+      <div class="card-body">
+        <h4 class="card-title"> coriander seeds</h4>
+        
+        <p class="card-text"> Whole coriander seeds, imparting a rich, earthy flavor to your recipes.
+
+      </div>
+    </div>
+  
+  
+    
+    <div id="26" class="card">
+      <img class="card-img-top" src="garam masala.jpg" >
+      <div class="card-body">
+        <h4 class="card-title">Garam Masala Powder</h4>
+        
+        <p class="card-text">A harmonious mix of spices, perfect for adding depth and warmth.
+        </p>
+      </div>
+    </div>
+  
+
+    
+    <div  id="27" class="card">
+      <img class="card-img-top" src="ginger.jpg" >
+      <div class="card-body">
+        <h4 class="card-title">Ginger Powder</h4>
+        
+        <p class="card-text">Intense ginger essence, enhancing dishes with a zesty and aromatic flair.</p>
+
+      </div>
+    </div>
+
+    
+    <div id="28" class="card">
+      <img class="card-img-top" src="ginger.jpg" >
+      <div class="card-body">
+        <h4 class="card-title">Ginger powder </h4>
+        
+        <p class="card-text">the ginger powder will make your food tasty</p>
+      </div>
+    </div>
+</div>
+<div class="col">
+    <div id="29" class="card">
+      <img class="card-img-top" src="cinnamon powder.jpg" >
+      <div class="card-body">
+        <h4 class="card-title">Daalchini Powder</h4>
+        
+        <p class="card-text"> Ground cinnamon, lending a sweet and spicy note to your culinary creations.
+        </p>
+      </div>
+    </div>
+
+    
+    <div  id="30" class="card">
+      <img class="card-img-top" src="cumin zeera powder.jpg" >
+      <div class="card-body">
+       <h4 class="card-title">Zeera: </h4>
+        <p class="card-text">Cumin seeds, providing a distinct nutty and earthy flavor to diverse dishes.
+        </p>
+
+      </div>
+    </div>
+
+    
+    <div  id="31" class="card">
+      <img src="pink salt.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Pink salt</h5>
+        
+        <p class="card-text"> A tangy and flavorful salt came form lahores mines that blend, perfect for adding a burst of excitement to snacks and chaats.</p>
+      </div>
+    </div>
+
+    <div  id="32" class="card">
+      <img src="chaat masala.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Chat Masala</h5>
+        
+        <p class="card-text"> A tangy and flavorful blend, perfect for adding a burst of excitement to snacks and chaats.</p>
+      </div>
+    </div>
+
+</div>
+
+
+
+
+</div>    
+<hr>
+<hr>
+<hr>
+<h2 id="desert">Desert</h2>
+<div  class="row container-fluid ">
+  
+ 
+  <div class="col ">
+    
+    <div id="37" class="card">
+      <img class="card-img-top" src="kheer.jpg" >
+      <div class="card-body">
+        <h4 class="card-title"> Kheer Mix</h4>
+        
+        <p class="card-text">  A convenient blend for crafting the perfect rice pudding, ensuring a creamy and flavorful experience with each spoonful.
+        </p>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="col ">
+    
+    <div id="2" class="card">
+      <img class="card-img-top" src="sheer khurma.jpg" >
+      <div class="card-body">
+        <h4 class="card-title">Sheer Khurma Mix </h4>
+        
+        <p class="card-text">  Elevate your festivities with our special mix, creating a rich and aromatic vermicelli pudding that captures the essence of celebration.
+        </p>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="col ">
+    
+    <div  id="3" class="card">
+      <img class="card-img-top" src="gajar halwa.jpg" >
+      <div class="card-body">
+        <h4 class="card-title"> Gajar Halwa</h4>
+        
+        <p class="card-text"> Savor the traditional warmth of carrot halwa, a luscious dessert that combines the sweetness of carrots with a hint of cardamom.
+        </p>
+
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="col ">
+    
+    <div  id="4" class="card">
+      <img class="card-img-top" src="rasmailai.jpg" >
+      <div class="card-body">
+        <h4 class="card-title"> Rasmalai</h4>
+        
+        <p class="card-text">  Experience the luxury of our delicate cheese dumplings soaked in saffron-infused milk, creating a blissful symphony of textures and flavors.</p>
+      </div>
+    </div>
+  
+  </div>
+</div> 
+<hr>
+<hr>
+<hr>
+
+
+ <!-------card eand-->
+  <!----------about-->
+  <hr>
+  <h1 id="about">About<br>Us</h1></div>
+  
+<div  class="container  " >
+
+  
+  <p class="text-white">We are a young company of flavours, passionate about creating delicious and innovative products that delight our customers.
+     We believe that flavour is more than just a taste, it is an experience that can transform any dish into a masterpiece. 
+     That’s why we use only the finest ingredients, sourced from local and organic farms, and craft them with care and creativity.
+      Whether you are looking for a spicy sauce, a sweet jam, a tangy dressing, or a savoury dip, we have something for you.
+       Our products are vegan, gluten-free, and preservative-free, so you can enjoy them without guilt.
+        We are always experimenting with new flavours and combinations, and we love to hear from our customers.
+         If you have any feedback, suggestions, or requests, please feel free to contact us.
+     We are a young company of flavours, and we want to share our passion with you.</p>
+<h3>Our Motive</h3>
+<p class="text-white">"Flavors is a dynamic and innovative young company dedicated to redefining culinary experiences.
+   Our passion lies in exploring diverse tastes and creating unique flavor profiles that captivate the senses.
+    Committed to quality and creativity, Flavors aims to elevate gastronomic journeys through a fusion of tradition and innovation.
+   Join us on a delicious adventure where every bite tells a story of culinary excellence."</p>
+
+
+</div>
+  <!------our location-->
+<hr>
+<h1 id="location">Our<br>location</h1></div>
+
+<div class=" container text-white"  style="align-self: center;">
+ 
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.7182582934615!2d67.12479497591008!3d25.00968773926903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb347f6c8a122f5%3A0xdb84d3a04e35cb9c!2sAptech%20Gulshan%20e%20Maymar%20Center!5e0!3m2!1sen!2s!4v1697816284232!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<!-------fooder/contact---->
+  <hr><hr><hr><div id="contact" class="row container-fluid">
+  
+<h1>Contact <br>Us</h1>
+
+  <div  id="section3" class="container  text-white">
+    <div class="row">
+        <div class="col" style="text-align: right;" ><h6><img class="icons" src="web.png">Wedsite:</h6></div>
+        <div class="col" style="text-align: left;"><a href="e project.html"><h6>www.flavors.com</h6></a></div></div>
+        <div class="row">
+        <div class="col" style="text-align: right;" ><h6><img class="icons" src="Whatsapp.png">   Phone:</h6></div>
+        <div class="col" style="text-align: left;"><h6>+00 123 456 789</h6></div>
+        </div>
+        <div class="row">
+        <div class="col" style="text-align: right;" ><h6><img class="icons" src="Facebook.png">Facebook:</h6></div>
+        <div class="col" style="text-align: left;"><h6>flavors.offical</h6></a></div></div>
+        <div class="row">
+        <div class="col" style="text-align: right;" ><h6><img class="icons" src="Insta.png">Instagram:</h6></div>
+        <div class="col" style="text-align: left;"><h6>flavors.offical</h6></div></div>
+        <div class="row">
+        <div class="col" style="text-align: right;" ><h6><img class="icons" src="mail.png">Email:</h6></div>
+        <div class="col" style="text-align: left;"><h6>flavors@gmail.com</h6></div></div>
+           
+            </h6>
+       
+       
+
+
+    </div>
+    </div>
+    <div  id="section3" class="container-fluid bg-dark text-white">
+    <div class="row">
+      <div class="col"><p style="text-align: center;">all rights reserved by Flavor.privetlimted</p></div>
+    </div>
+    </div>
+</body>
+</html>>
